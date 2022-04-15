@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+#gameTitle {
+	text-align: center;
+}
+
+#gameContainer {}
+
+body {
+	
+	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("wiseRVlogo.svg");
+	   background-position: center;
+    background-size: cover;
+    display: flex;
+	font-size: 3.5vmin;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color:white;
+	position: absolute;
+	top: 9%;
+	left: 0%;
+	width: 100%;
+	height: 91%;
+	overflow: scroll;
+}
+
+
+.pageBody {
+	position: absolute;
+	background-color: #6A9494;
+	top: 9%;
+	left: 0%;
+	width: 100%;
+	height: 91%;
+	overflow: scroll;
+}
+
+.container {
+	background-color: white;
+	width:100%;
+	height:100%;
+}
+
+#header {
+	position:fixed;
+	background-color: #337777;
+	top: 0px;
+	left: 0px;
+	height: 11%;
+	width: 100%;
+	font-size: 5vmin;
+	color: white;
+	font-family:"Verdan";
+	text-align: center;
+}
+
+#headerText {
+	position: absolute;
+	width: 100%;
+	height:100%;
+}
+
+#headerHomeBtn, #headerBackBtn {
+	position: absolute;
+	height:60%;
+	top:20%;
+	right:10px;
+}
+
+#headerBackBtn {
+	left:10px;
+}
+
+
+#footer {
+	position: absolute;
+	background-color: #025B5B;
+	width:100%;
+	height:5%;
+	bottom:0px;
+	left:0px;
+}
+
+ 
+.footerElm {
+	position: relative;
+	border: solid transparent;
+	border-width: 0 0 0 1px;
+	border-left-color: #ffffff;
+	width: -webkit-calc(25% - 1px);
+	width: -moz-calc(25% - 1px);
+	width: calc(25% - 1px);
+	text-align: center;
+	float: left;
+	height: 90%;
+	top: 5%;
+}
+
+.rectangle {
+	text-align: center;
+	width:30%;
+	height:10%;
+	background-color: white;
+	border: solid 2px black;
+	
+}
+
+#floatRight {
+	float: right;
+}
+
+  
+.dividerLine {
+	width:90%;
+	margin:0 5%;
+	height: 1px;
+	background-color:#2D2D2D;
+}
+
+.dividerLine2 {
+	width:90%;
+	margin:0 5%;
+	height: 1px;
+	background-color:white;
+}
+
+.contentHeader, .centerText {
+	width:100%;
+	text-align: center;
+}
+
+.contentHeader {
+	font-weight: bold;
+	font-size: 6vmin;
+}
+
+.spacer10px {
+	width: 100%;
+	height: 10px;
+}
+
+.spacer20px {
+	width: 100%;
+	height: 20px;
+}
+
+.spacer40px {
+	width: 100%;
+	height: 40px;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #04AA6D;
+	color:white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	width: 100%;
+	border-radius: 20px;
+}
+
+input.textBox, textarea.customerBox {
+    width: 80%;
+	height:auto;
+	font-family: "Arial";
+	font-size: 1em;
+	background-color : #ffffff;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+	border: 1px solid #5E5E5C;
+}
+
+input.textBox {
+	height: 30px;
+	
+}
+
+.select, .selectOption {
+	width: 20%;
+	font-family: "Arial";
+	font-size: .5em;
+	text-align: center;
+	background-color : #ffffff;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+	border: 1px solid #5E5E5C;
+}
+
+select {
+	height: 20%;
+}
+
+input.number {
+	font-family: "Arial";
+	font-size: .75em;
+	background-color: #ffffff;
+	 -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+	border: 1px solid #5E5E5C;
+}
+
+input.submit {
+	font-family: "Arial";
+	font-size: .5em;
+	width:10%;
+	background-color: #ffffff;
+	 -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+	border: 1px solid #5E5E5C;
+}
+
+input.reset {
+	font-family: "Arial";
+	width:10%;
+	font-size: .5em;
+	background-color: #ffffff;
+	 -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+	border: 1px solid #5E5E5C;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
+.forgotbtn {
+	background-color: black;
+	color:white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	width: 100%;
+}
+
+.cancelbtn {
+	background-color: #F44336;
+	color:white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	width: 100%;
+}
+
+.logincontainer {
+	padding: 16px;
+	font-family: "Arial";
+	font-size: 3.5vmin;
+}
+
+
+.th, .td {
+	background-color:white;
+	padding: 10px;
+	text-align:left;
+}
+
+.table {	
+	width:80%;
+	font-family: "Arial";
+	font-size: 1em;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+	border: 1px;
+	
+}
+
+
+
+
+
